@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
     <title>Lucas Rector - Resume</title>
+    <!-- Internal stylesheet for styling -->
     <style>
+        /* Global styles for the body */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #000000;
-            color: #ffffff; /* Updated text color to white */
+            color: #ffffff; 
             line-height: 1.6;
         }
 
+        /* Styling for the header section */
         header {
             background-color: #007BFF;
             color: #fff;
@@ -21,6 +26,7 @@
             text-align: center;
         }
 
+        /* Styling for sections in the document */
         section {
             max-width: 800px;
             margin: 20px auto;
@@ -29,6 +35,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        /* Styling for heading tags */
         h1 {
             color: #ffffff;
             margin-bottom: 0.5em;
@@ -39,11 +46,13 @@
             margin-bottom: 0.5em;
         }
 
+        /* Styling for hyperlinks */
         a {
             color: #0056b3;
             text-decoration: none;
         }
 
+        /* Styling for the container and columns */
         .container {
             display: flex;
             justify-content: space-between;
@@ -53,6 +62,7 @@
             width: 48%;
         }
 
+        /* Responsive styling for smaller screens */
         @media screen and (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -63,11 +73,10 @@
             }
         }
 
-        .skills-list {
+        /* Styling for skills and projects lists */
+        .skills-list, .projects-list {
             list-style: none;
             padding: 0;
-            display: flex;
-            flex-wrap: wrap;
             margin-top: 1em;
         }
 
@@ -79,30 +88,18 @@
             border-radius: 4px;
         }
 
-        .projects-list {
-            list-style: none;
-            padding: 0;
-            margin-top: 1em;
-        }
-
         .projects-list li {
             color: #fff;
             margin-bottom: 0.5em;
         }
 
+        /* Styling for the footer */
         footer {
             text-align: center;
             margin-top: 20px;
         }
 
-        header {
-            background-color: #0056b3;
-        }
-
-        section {
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-
+        /* Additional styling for the navigation buttons */
         .nav-buttons {
             display: flex;
             justify-content: center;
@@ -124,6 +121,7 @@
             background-color: #0056b3;
         }
 
+        /* Styling for the back-to-top button */
         #back-to-top {
             display: none;
             position: fixed;
@@ -145,11 +143,13 @@
 </head>
 <body>
 
+    <!-- Header section with name and role -->
     <header>
         <h1>Lucas Rector</h1>
         <p>Computer Science Student</p>
     </header>
 
+    <!-- Navigation buttons for different sections -->
     <div class="nav-buttons">
         <button class="nav-button" onclick="scrollToSection('about')">About Me</button>
         <button class="nav-button" onclick="scrollToSection('experience')">Experience</button>
@@ -158,6 +158,7 @@
         <button class="nav-button" onclick="scrollToSection('projects')">Projects</button>
     </div>
 
+    <!-- About Me section -->
     <section id="about">
         <div class="container">
             <div class="left-col">
@@ -174,6 +175,7 @@
         </div>
     </section>
 
+    <!-- Experience section -->
     <section id="experience">
         <h2>Experience</h2>
         <h3>Ferrous Design Inc - Junior Developer</h3>
@@ -187,12 +189,14 @@
         <p>Strategized and executed social media plans to boost brand visibility using graphic design and videography to create advertisements. Created engaging content, analyzed metrics, and adapted strategies to stay up to date on trends to ensure a consistent brand voice to drive impactful online engagement.</p>
     </section>
 
+    <!-- Education section -->
     <section id="education">
         <h2>Education</h2>
         <p>Appalachian State University - Computer Science BS (2023 - 2025)</p>
         <p>Western Piedmont Community College - Associate of Science - AS (August 2021 - May 2023)</p>
     </section>
 
+    <!-- Skills section -->
     <section id="skills">
         <h2>Skills</h2>
         <ul class="skills-list">
@@ -217,6 +221,7 @@
         </ul>
     </section>
 
+    <!-- Projects section -->
     <section id="projects">
         <h2>Projects</h2>
         <ul class="projects-list">
@@ -226,12 +231,15 @@
         </ul>
     </section>
 
+    <!-- Footer section -->
     <footer>
         <p>&copy; 2024 Lucas Rector. All rights reserved.</p>
     </footer>
 
+    <!-- Back-to-top button with JavaScript functions -->
     <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
 
+    <!-- JavaScript functions for smooth scrolling and back-to-top functionality -->
     <script>
         function scrollToSection(sectionId) {
             var section = document.getElementById(sectionId);
@@ -243,6 +251,7 @@
             document.documentElement.scrollTop = 0;
         }
 
+        // Function to display back-to-top button based on scroll position
         window.onscroll = function () {
             var backToTopButton = document.getElementById("back-to-top");
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
