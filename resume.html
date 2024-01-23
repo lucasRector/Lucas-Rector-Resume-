@@ -232,9 +232,14 @@
     </section>
 
     <!-- Footer section -->
-    <footer>
-        <p>&copy; 2024 Lucas Rector. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; <span id="current-year"></span> Lucas Rector. All rights reserved.</p>
+</footer>
+
+<script>
+    // Update the current year dynamically
+    document.getElementById("current-year").innerText = new Date().getFullYear();
+</script>
 
     <!-- Back-to-top button with JavaScript functions -->
     <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
