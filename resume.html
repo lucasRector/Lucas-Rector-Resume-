@@ -68,7 +68,6 @@
         }
 
         .nav-button, .skills-list li {
-            background-color: #007BFF;
             color: #fff;
             padding: 8px;
             margin: 4px;
@@ -80,6 +79,10 @@
 
         .nav-button:hover, .skills-list li:hover {
             background-color: #0056b3;
+        }
+
+        .blue-text {
+            background-color: #007BFF;
         }
 
         footer {
@@ -113,11 +116,11 @@
     </header>
 
     <div class="nav-buttons">
-        <button class="nav-button" onclick="scrollToSection('about')">About <span class="blue-text">Me</span></button>
-        <button class="nav-button" onclick="scrollToSection('experience')">Experience</button>
-        <button class="nav-button" onclick="scrollToSection('education')">Education</button>
-        <button class="nav-button" onclick="scrollToSection('skills')">Skills</button>
-        <button class="nav-button" onclick="scrollToSection('projects')">Projects</button>
+        <button class="nav-button" onclick="scrollToSection('about')"><span class="blue-text">About</span> Me</button>
+        <button class="nav-button" onclick="scrollToSection('experience')"><span class="blue-text">Experience</span></button>
+        <button class="nav-button" onclick="scrollToSection('education')"><span class="blue-text">Education</span></button>
+        <button class="nav-button" onclick="scrollToSection('skills')"><span class="blue-text">Skills</span></button>
+        <button class="nav-button" onclick="scrollToSection('projects')"><span class="blue-text">Projects</span></button>
     </div>
 
     <section id="about">
