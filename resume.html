@@ -47,12 +47,22 @@
             overflow: hidden;
             white-space: nowrap;
             animation: slideIn 1s ease-in-out 0.5s;
+            position: relative;
         }
 
         .name-left, .name-right {
-            display: inline-block;
+            position: absolute;
+            top: 0;
             opacity: 0;
             animation: fadeIn 1s ease-in-out 0.5s;
+        }
+
+        .name-left {
+            left: -100%;
+        }
+
+        .name-right {
+            right: -100%;
         }
 
         @keyframes slideIn {
