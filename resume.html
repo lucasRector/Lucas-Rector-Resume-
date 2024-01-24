@@ -14,7 +14,6 @@
             line-height: 1.6;
             font-size: 16px;
             animation: zoomIn 1s ease-in-out;
-            transform-origin: top center;
         }
 
         @keyframes zoomIn {
@@ -192,4 +191,46 @@
             <li>Java</li>
             <li>Python</li>
             <li>Swift</li>
-           
+            <li>Amazon Web Services (AWS)</li>
+            <li>R (Programming Language)</li>
+            <li>GitHub</li>
+            <li>Git</li>
+            <li>Web Design</li>
+            <li>Facebook Ads</li>
+            <li>Graphic Design</li>
+            <li>Photography</li>
+            <li>Facebook Marketing</li>
+            <li>Videography</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Lucas Rector. All rights reserved.</p>
+    </footer>
+
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        document.getElementById("current-year").innerText = new Date().getFullYear();
+
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        window.onscroll = function () {
+            var backToTopButton = document.getElementById("back-to-top");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
