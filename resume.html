@@ -34,7 +34,7 @@
             max-width: 800px;
             margin: 10px auto;
             padding: 1em;
-            background-color: #007BFF; /* Updated color */
+            background-color: #007BFF;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -67,8 +67,8 @@
             margin-top: 1em;
         }
 
-        .nav-button, .skills-list li, section h2 {
-            background-color: #007BFF; /* Updated color */
+        .nav-button, .skills-list li {
+            background-color: #007BFF;
             color: #fff;
             padding: 8px;
             margin: 4px;
@@ -78,7 +78,7 @@
             transition: background-color 0.3s ease;
         }
 
-        .nav-button:hover, .skills-list li:hover, section h2:hover {
+        .nav-button:hover, .skills-list li:hover {
             background-color: #0056b3;
         }
 
@@ -113,7 +113,7 @@
     </header>
 
     <div class="nav-buttons">
-        <button class="nav-button" onclick="scrollToSection('about')">About Me</button>
+        <button class="nav-button" onclick="scrollToSection('about')">About <span class="blue-text">Me</span></button>
         <button class="nav-button" onclick="scrollToSection('experience')">Experience</button>
         <button class="nav-button" onclick="scrollToSection('education')">Education</button>
         <button class="nav-button" onclick="scrollToSection('skills')">Skills</button>
@@ -123,12 +123,12 @@
     <section id="about">
         <div class="container">
             <div class="left-col">
-                <h2>About Me</h2>
+                <h2><span class="blue-text">About</span> Me</h2>
                 <p>Dedicated computer science student with a passion for solving problems through innovative coding solutions. Seeking opportunities to apply technical skills in a challenging and dynamic work environment.</p>
             </div>
 
             <div class="right-col">
-                <h2>Contact</h2>
+                <h2><span class="blue-text">Contact</span></h2>
                 <p>Email: lrrector44@gmail.com<br>
                    Location: Connellys Springs, NC, USA<br>
                    LinkedIn: <a href="https://www.linkedin.com/in/lucas-rector/" target="_blank">LinkedIn Profile</a></p>
@@ -137,7 +137,7 @@
     </section>
 
     <section id="experience">
-        <h2>Experience</h2>
+        <h2><span class="blue-text">Experience</span></h2>
         <h3>Ferrous Design Inc - Junior Developer</h3>
         <p>November 2023 - April 2024 (6 months)<br>
            Boone, North Carolina, United States</p>
@@ -150,13 +150,13 @@
     </section>
 
     <section id="education">
-        <h2>Education</h2>
+        <h2><span class="blue-text">Education</span></h2>
         <p>Appalachian State University - Computer Science BS (2023 - 2025)</p>
         <p>Western Piedmont Community College - Associate of Science - AS (August 2021 - May 2023)</p>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2><span class="blue-text">Projects</span></h2>
         <ul class="projects-list">
             <li>Project 1: EX.</li>
             <li>Project 2: EX.</li>
@@ -165,7 +165,7 @@
     </section>
     
     <section id="skills">
-        <h2>Skills</h2>
+        <h2><span class="blue-text">Skills</span></h2>
         <ul class="skills-list">
             <li>Troubleshooting</li>
             <li>Analytical Skills</li>
