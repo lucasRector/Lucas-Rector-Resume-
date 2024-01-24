@@ -14,6 +14,7 @@
             line-height: 1.6;
             font-size: 16px;
             animation: zoomIn 1s ease-in-out;
+            transform-origin: top center;
         }
 
         @keyframes zoomIn {
@@ -39,6 +40,33 @@
             header {
                 padding: 0.8em;
                 font-size: 1.5em;
+            }
+        }
+
+        .name-container {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: slideIn 1s ease-in-out 0.5s;
+        }
+
+        .name-left, .name-right {
+            display: inline-block;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 0.5s;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
             }
         }
 
@@ -124,7 +152,10 @@
 </head>
 <body>
     <header>
-        <h1>Lucas Rector</h1>
+        <div class="name-container">
+            <div class="name-left">Lucas</div>
+            <div class="name-right">Rector</div>
+        </div>
         <p>Computer Science Student</p>
     </header>
 
